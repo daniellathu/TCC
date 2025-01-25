@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require_once("/TCC/dbConnection.php");
+require_once("/dbConnection.php");
 
 // Get id from URL parameter
 $id = $_GET['id'];
@@ -23,10 +23,10 @@ $email = $resultData['email'];
 <body>
     <h2>Edit Data</h2>
     <p>
-	    <a href="/TCC/index.php">Home</a>
+	    <a href="/index.php">Home</a>
     </p>
 	
-	<form name="edit" method="post" action="/TCC/editAction.php">
+	<form name="edit" method="post" action="/editAction.php">
 		<table border="0">
 			<tr> 
 				<td>Name</td>
