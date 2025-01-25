@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require_once("/TCC/dbConnection.php");
+require_once("/dbConnection.php");
 
 // Get id parameter value from URL
 $id = $_GET['id'];
