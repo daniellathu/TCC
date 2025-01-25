@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require_once("/dbConnection.php");
+require_once("dbConnection.php");
 
 if (isset($_POST['update'])) {
 	// Escape special characters in a string for use in an SQL statement
@@ -28,6 +28,6 @@ if (isset($_POST['update'])) {
 		
 		// Display success message
 		echo "<p><font color='green'>Data updated successfully!</p>";
-		echo "<a href='/index.php'>View Result</a>";
+		echo "<a href='/TCC/index.php'>View Result</a>";
 	}
 }
