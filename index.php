@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require_once("/TCC/dbConnection.php");
+require_once("/dbConnection.php");
 
 // Fetch data in descending order (lastest entry first)
 $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
@@ -14,7 +14,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 <body>
 	<h2>Homepage</h2>
 	<p>
-		<a href="/TCC/add.php">Add New Data</a>
+		<a href="/add.php">Add New Data</a>
 	</p>
 	<table width='80%' border=0>
 		<tr bgcolor='#DDDDDD'>
@@ -30,8 +30,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 			echo "<td>".$res['name']."</td>";
 			echo "<td>".$res['age']."</td>";
 			echo "<td>".$res['email']."</td>";	
-			echo "<td><a href=\"/TCC/edit.php?id=$res[id]\">Edit</a> | 
-			<a href=\"/TCC/delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+			echo "<td><a href=\"/edit.php?id=$res[id]\">Edit</a> | 
+			<a href=\"/delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
 		}
 		?>
 	</table>
