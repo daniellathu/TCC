@@ -6,7 +6,7 @@
 <body>
 <?php
 // Include the database connection file
-require_once("/TCC/dbConnection.php");
+require_once("/dbConnection.php");
 
 if (isset($_POST['submit'])) {
 	// Escape special characters in string for use in SQL statement	
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 		
 		// Display success message
 		echo "<p><font color='green'>Data added successfully!</p>";
-		echo "<a href='/TCC/index.php'>View Result</a>";
+		echo "<a href='/index.php'>View Result</a>";
 	}
 }
 ?>
